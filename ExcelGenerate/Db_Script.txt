@@ -1,0 +1,1 @@
+﻿scaffold-DbContext "Data Source=NASIR\SQLEXPRESS; Initial Catalog=IBOS2; Connect Timeout=30; Encrypt=False; Trusted_Connection=True; ApplicationIntent=ReadWrite;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "Models" -ContextDir "DbContexts" -Context "ExportContext"  -t dbo.Products -f
