@@ -11,9 +11,10 @@ namespace ExcelGenerate.Helper
     public class DownloadXL
     {
         public static async Task<IActionResult> GetExcel<T>(string WorkSheetName, List<T> dt)
+            // GetExcel<T>() => Generic method ,  List<T> Generic Collection,  T => Type
         {
             int totalRowCount = dt.Count;
-            int totalColumnCount = 1;
+            
 
             XLWorkbook xLWorkbook = new XLWorkbook();
             IXLWorksheet xLWorksheet = xLWorkbook.Worksheets.Add(WorkSheetName);
@@ -79,10 +80,10 @@ namespace ExcelGenerate.Helper
             // Column Name
             var hsl = 1;
             var TypeT = typeof(T); // GetExcel<T>(string WorkSheetName, List<T> dt) ==> GetExcel<ProductDTO>("abc", data) --> Generic method.
-            var properties = TypeT.GetProperties(); // Get ColumnName 
+            var properties = TypeT.GetProperties(); // Returns all properties of the current Type ProductDTO (Get ColumnName) 
             foreach (var item in properties)  
             {
-                var name = StringSpliter.ByPascaleCase(item.Name);
+                var name = StringSpliter.ByPascaleCase(item.Name); // Name => Properties name
                 //Cell(row number, column number) of a Range
                 header.Cell(1, hsl++).SetValue(name);  // Set ColumnName In cell [ 1 means 1st row in a Range of (7, 8, 7, 8)]
             }

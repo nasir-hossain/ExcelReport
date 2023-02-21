@@ -1,10 +1,12 @@
-﻿using ExcelGenerate.DTO;
+﻿using ClosedXML.Excel;
+using ExcelGenerate.DTO;
 using ExcelGenerate.Helper;
 using ExcelGenerate.IRepository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -24,8 +26,9 @@ namespace ExcelGenerate.Controllers
         [Route("GetProduct")]
         public async Task<IActionResult> GetProduct()
         {
-            var data = await IRep.GetProduct();
-            return await DownloadXL.GetExcel<ProductDTO>("ProductReport", data);
+            var data = await IRep.GetProduct(); //List<ProductDTO> data = await IRep.GetProduct(); 
+            return await DownloadXL.GetExcel<ProductDTO>("ProductReport", data); //Generic method call jar Type ProductDTO class reference
         }
+
     }
 }

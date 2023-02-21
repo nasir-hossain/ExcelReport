@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\iBOS Ltd\\New folder\\ExcelGenerate\\ExcelGenerate\\ExcelGenerate.csproj": {}
+    "D:\\iBOS Ltd\\ExcelReportGit\\ExcelReport\\ExcelGenerate\\ExcelGenerate.csproj": {}
   },
   "projects": {
-    "D:\\iBOS Ltd\\New folder\\ExcelGenerate\\ExcelGenerate\\ExcelGenerate.csproj": {
+    "D:\\iBOS Ltd\\ExcelReportGit\\ExcelReport\\ExcelGenerate\\ExcelGenerate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\iBOS Ltd\\New folder\\ExcelGenerate\\ExcelGenerate\\ExcelGenerate.csproj",
+        "projectUniqueName": "D:\\iBOS Ltd\\ExcelReportGit\\ExcelReport\\ExcelGenerate\\ExcelGenerate.csproj",
         "projectName": "ExcelGenerate",
-        "projectPath": "D:\\iBOS Ltd\\New folder\\ExcelGenerate\\ExcelGenerate\\ExcelGenerate.csproj",
+        "projectPath": "D:\\iBOS Ltd\\ExcelReportGit\\ExcelReport\\ExcelGenerate\\ExcelGenerate.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\iBOS Ltd\\New folder\\ExcelGenerate\\ExcelGenerate\\obj\\",
+        "outputPath": "D:\\iBOS Ltd\\ExcelReportGit\\ExcelReport\\ExcelGenerate\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
